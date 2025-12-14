@@ -24,7 +24,7 @@ Installation
 
 Clone the repository
 
-bash   git clone https://github.com/yourusername/instagram-mini-clone.git
+bash   git clone https://github.com/vikram8084/instagram-mini-clone.git
    cd instagram-mini-clone
 
 Backend Setup
