@@ -1,0 +1,56 @@
+.post-card {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.post-header {
+  padding: 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+.post-username {
+  font-weight: 600;
+  color: #262626;
+  text-decoration: none;
+}
+
+.post-username:hover {
+  color: #0095f6;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-actions {
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #262626;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: opacity 0.2s;
+}
+
+.action-btn:hover {
+  opacity: 0.7;
+}
+
+.post-caption {
+  padding: 0 15px 15px;
+  color: #262626;
+}

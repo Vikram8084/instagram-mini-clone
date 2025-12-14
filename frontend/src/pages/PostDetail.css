@@ -1,0 +1,152 @@
+.post-detail-container {
+  max-width: 935px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.post-detail-card {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  max-height: 700px;
+}
+
+.post-detail-image {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-detail-image img {
+  max-width: 100%;
+  max-height: 700px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.post-detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #dbdbdb;
+}
+
+.post-detail-header {
+  padding: 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+.detail-username {
+  font-weight: 600;
+  color: #262626;
+  text-decoration: none;
+}
+
+.detail-username:hover {
+  color: #0095f6;
+}
+
+.post-detail-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.detail-caption {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.detail-caption a {
+  text-decoration: none;
+  color: #262626;
+}
+
+.detail-caption strong {
+  font-weight: 600;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment-item {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-item a {
+  text-decoration: none;
+  color: #262626;
+}
+
+.comment-item strong {
+  font-weight: 600;
+}
+
+.post-detail-actions {
+  padding: 15px;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.detail-like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.likes-count {
+  font-weight: 600;
+  color: #262626;
+}
+
+.comment-form {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.comment-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-submit {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-submit:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .post-detail-card {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+  
+  .post-detail-sidebar {
+    border-left: none;
+    border-top: 1px solid #dbdbdb;
+  }
+  
+  .post-detail-image img {
+    max-height: 400px;
+  }
+}
